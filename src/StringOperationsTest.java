@@ -57,5 +57,15 @@ String text;
 		
 		assertEquals(expected, stringOperations1.numberOfLowerCase(text));
 	}
+	
+	@Test
+	public void numberCharactersThatAreNotlettersTest_ShouldReturnNumberCharactersThatAreNotletters_IfGivenTheString() {
+		
+		int expected = 1;
+		
+		assertEquals(expected, stringOperations1.numberCharactersThatAreNotletters(text));
+	}
+	
+	
 }
 
