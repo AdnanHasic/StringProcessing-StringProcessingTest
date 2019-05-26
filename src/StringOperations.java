@@ -48,17 +48,35 @@ public class StringOperations {
 		
 	}
 	
-	public int numberOfUppercase(String text) {
+	public int numberOfUpperCase(String text) {
 		
-		int counterOfUppercase = 0;
+		int counterOfUpperCase = 0;
 		
 		for (int i = 0; i < text.length(); i++) {
 			
 			if(Character.isUpperCase(text.charAt(i))) {
-				counterOfUppercase++;
+				counterOfUpperCase++;
 			}
 		}
 		
-		return counterOfUppercase;
+		return counterOfUpperCase;
+	}
+	
+	public int numberOfLowerCase(String text) {
+		
+
+		int counterOfLowerCase = 0;
+		
+		for (int i = 0; i < text.length(); i++) {
+			
+			if(Character.isLowerCase(text.charAt(i))) {
+				counterOfLowerCase++;
+			}
+		}
+		
+		return counterOfLowerCase;
+		
 	}
 }
+
+

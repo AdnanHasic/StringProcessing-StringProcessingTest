@@ -42,12 +42,20 @@ String text;
 	}
 	
 	@Test
-	public void numberOfUppercaseTest_ShouldReturnNumberOfUppercase_IfGivenTheString() {
+	public void numberOfUpperCaseTest_ShouldReturnNumberOfUpperCase_IfGivenTheString() {
 		
 		int expected = 2;
 		
-		assertEquals(expected, stringOperations1.numberOfUppercase(text));
+		assertEquals(expected, stringOperations1.numberOfUpperCase(text));
+		
 	}
 	
-	
+	@Test
+	public void numberOfLowerCaseTest_ShouldReturnNumberOfLowerCase_IfGivenTheString() {
+		
+		int expected = 8;
+		
+		assertEquals(expected, stringOperations1.numberOfLowerCase(text));
+	}
 }
+
