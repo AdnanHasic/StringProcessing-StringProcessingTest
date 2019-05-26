@@ -47,4 +47,18 @@ public class StringOperations {
 
 		
 	}
+	
+	public int numberOfUppercase(String text) {
+		
+		int counterOfUppercase = 0;
+		
+		for (int i = 0; i < text.length(); i++) {
+			
+			if(Character.isUpperCase(text.charAt(i))) {
+				counterOfUppercase++;
+			}
+		}
+		
+		return counterOfUppercase;
+	}
 }

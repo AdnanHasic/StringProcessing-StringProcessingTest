@@ -48,4 +48,6 @@ String text;
 		
 		assertEquals(expected, stringOperations1.numberOfUppercase(text));
 	}
+	
+	
 }
