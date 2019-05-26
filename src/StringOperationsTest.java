@@ -36,8 +36,16 @@ String text;
 	@Test
 	public void charactesAtOddPositionsTest_ShouldReturnCharactersAtoddPositions_IfGivenTheString() {
 		
-		String expected = "daHSC";
+		String expected = "daai";
 		
 		assertEquals(expected, stringOperations1.charactersAtOddPositions(text));
+	}
+	
+	@Test
+	public void numberOfUppercaseTest_ShouldReturnNumberOfUppercase_IfGivenTheString() {
+		
+		int expected = 2;
+		
+		assertEquals(expected, stringOperations1.numberOfUppercase(text));
 	}
 }
