@@ -26,8 +26,6 @@ String text;
 	
 	@Test
 	public void charactersAtEvenPositionsTest_ShouldReturnCharactersAtEvenPositions_IfGivenTheString() {
-		
-		 stringOperations1.charactersAtEvenPositions(text);
 		 
 		 String expected = "AnnHsc";
 		 
@@ -35,4 +33,11 @@ String text;
       assertEquals(expected, stringOperations1.charactersAtEvenPositions(text));
 	}
 	
+	@Test
+	public void charactesAtOddPositionsTest_ShouldReturnCharactersAtoddPositions_IfGivenTheString() {
+		
+		String expected = "daHSC";
+		
+		assertEquals(expected, stringOperations1.charactersAtOddPositions(text));
+	}
 }
